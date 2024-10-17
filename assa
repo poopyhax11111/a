@@ -1,0 +1,68 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+ImageLabel.Parent = ScreenGui
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ImageLabel.Position = UDim2.new(0, 0, 0.842829704, 0)
+ImageLabel.Size = UDim2.new(0, 98, 0, 104)
+ImageLabel.Image = "rbxassetid://13333189485"
+
+TextLabel.Parent = ImageLabel
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.Position = UDim2.new(1.27318621, 0, 0.15628241, 0)
+TextLabel.Size = UDim2.new(0, 373, 0, 95)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Project HACKROT By Y00zieDaPro Run scripts lives without MEGA HAKC. HACK. or converting!\\nUse the external program to execute scripts.\\nStatus: HACKROTED"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 22.000
+TextLabel.TextTransparency = 1.000
+TextLabel.TextWrapped = true
+
+-- Scripts:
+
+local function LNKHCD_fake_script() -- ScreenGui.moving things 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	wait(2)
+	script.Parent.ImageLabel:TweenPosition(UDim2.new(0.474, 0,0.457, 0), "Out", "Sine")
+	wait(3)
+	script.Parent.ImageLabel:TweenPosition(UDim2.new(0, 0,0.823, 0), "Out", "Sine")
+	local message = script.Parent.ImageLabel.TextLabel 
+	wait(1)
+	message.Transparency = 0.9
+	wait()
+	message.Transparency = 0.8
+	wait()
+	message.Transparency = 0.7
+	wait()
+	message.Transparency = 0.6
+	wait()
+	message.Transparency = 0.5
+	wait()
+	message.Transparency = 0.4
+	wait()
+	message.Transparency = 0.3
+	wait()
+	message.Transparency = 0.2
+	wait()
+	message.Transparency = 0.1
+	wait()
+	message.Transparency = 0
+end
+coroutine.wrap(LNKHCD_fake_script)()
